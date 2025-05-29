@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				fantasy: {
+					dark: '#1a0a2e',
+					purple: '#16213e',
+					gold: '#ffd700',
+					silver: '#c0c0c0',
+					emerald: '#50c878',
+					crimson: '#dc143c',
+					amber: '#ffbf00'
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,30 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'xp-fill': {
+					from: { width: '0%' },
+					to: { width: 'var(--xp-width)' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'glow': {
+					'0%, 100%': { textShadow: '0 0 5px #ffd700' },
+					'50%': { textShadow: '0 0 20px #ffd700, 0 0 30px #ffd700' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'xp-fill': 'xp-fill 2s ease-out forwards',
+				'float': 'float 3s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite alternate'
+			},
+			fontFamily: {
+				'fantasy': ['Cinzel', 'serif'],
+				'medieval': ['Uncial Antiqua', 'cursive']
 			}
 		}
 	},
