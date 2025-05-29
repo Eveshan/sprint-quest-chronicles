@@ -10,14 +10,16 @@ interface QuestBoardProps {
 }
 
 const quests = [
+  // Sarah's Quests
   {
     title: 'Document Gen & Letters Testing',
     type: 'Quest',
     members: ['Sarah'],
     region: 'salesforce',
     regionName: 'SFI',
-    xp: 100,
-    maxXp: 100
+    xp: 12,
+    maxXp: 20,
+    description: 'Tested doc generation and letters for quotes'
   },
   {
     title: 'Illustrative Premiums Manual Testing',
@@ -25,143 +27,223 @@ const quests = [
     members: ['Sarah'],
     region: 'salesforce',
     regionName: 'SFI',
-    xp: 100,
-    maxXp: 100
+    xp: 15,
+    maxXp: 20,
+    description: 'Manual testing for illustrative premiums and missing life factors'
   },
   {
-    title: 'Add Accident-Only to Test Harness',
+    title: 'Accident-Only Test Harness Addition',
     type: 'Quest',
     members: ['Sarah'],
     region: 'salesforce',
     regionName: 'Test Harness',
-    xp: 100,
-    maxXp: 100
+    xp: 18,
+    maxXp: 20,
+    description: 'Added accident-only cover to test harness — uncovered a bug!'
   },
+  
+  // Sershin's Quests
   {
     title: 'Roles & Permissions Bug Hunt',
     type: 'Boss',
-    members: ['Sershin', 'Keshlin'],
+    members: ['Sershin'],
     region: 'salesforce',
     regionName: 'SFI',
-    xp: 100,
-    maxXp: 100
+    xp: 20,
+    maxXp: 25,
+    description: 'Roles & permissions testing uncovered many bugs'
   },
   {
-    title: 'SFI Comprehensive Calculator',
-    type: 'Quest',
+    title: 'Comprehensive Calculator Build',
+    type: 'Boss',
     members: ['Sershin'],
     region: 'salesforce',
     regionName: 'Test Harness',
-    xp: 100,
-    maxXp: 100
+    xp: 25,
+    maxXp: 25,
+    description: 'Built comprehensive calculator + re-test features'
   },
   {
-    title: 'UAT Multi-Applicant Framework',
+    title: 'Provar Automation Pause',
     type: 'Quest',
     members: ['Sershin'],
     region: 'salesforce',
     regionName: 'Automation',
-    xp: 80,
-    maxXp: 100
+    xp: 5,
+    maxXp: 10,
+    description: 'Paused Provar automation to focus on harness value'
   },
   {
-    title: 'Datastor Categoriser Investigation Setup',
+    title: 'Multi-Applicant Framework',
+    type: 'Quest',
+    members: ['Sershin'],
+    region: 'salesforce',
+    regionName: 'Test Data',
+    xp: 15,
+    maxXp: 20,
+    description: 'Framework complete; prepping for UAT data generation'
+  },
+  {
+    title: 'Datastor Categoriser Investigation',
     type: 'Quest',
     members: ['Sershin'],
     region: 'knowledge',
-    regionName: 'Knowledge Crater',
-    xp: 40,
-    maxXp: 100
+    regionName: 'Investigation',
+    xp: 10,
+    maxXp: 15,
+    description: 'Set up user test environment for performance issues'
   },
+  
+  // Keshlin's Quests
   {
-    title: 'MP-1938: Doc Storage Handover',
+    title: 'Roles & Permissions Bug Massacre',
     type: 'Boss',
-    members: ['Kasu', 'Keshlin'],
-    region: 'docforge',
-    regionName: 'Docforge Ruins',
-    xp: 100,
-    maxXp: 100
+    members: ['Keshlin'],
+    region: 'salesforce',
+    regionName: 'SFI',
+    xp: 30,
+    maxXp: 30,
+    description: 'Destroyed bugs MP-2309 to MP-2392'
   },
   {
-    title: 'POD Eligibility Fix (MP-2289)',
+    title: 'Doc Storage Refactoring Takeover',
+    type: 'Quest',
+    members: ['Keshlin'],
+    region: 'docforge',
+    regionName: 'Document Services',
+    xp: 12,
+    maxXp: 20,
+    description: 'Took over doc storage refactoring from Kasu (MP-1938)'
+  },
+  {
+    title: 'POD Eligibility Fix',
     type: 'Quest',
     members: ['Keshlin'],
     region: 'salesforce',
     regionName: 'SFI',
-    xp: 100,
-    maxXp: 100
+    xp: 10,
+    maxXp: 15,
+    description: 'Fixed eligibility criteria for POD (MP-2289)'
   },
+  
+  // Kieran's Quests
   {
-    title: 'Rate Reconfig Final Analysis',
+    title: 'Rate Reconfiguration Analysis',
     type: 'Quest',
     members: ['Kieran'],
     region: 'knowledge',
-    regionName: 'Knowledge Crater',
-    xp: 100,
-    maxXp: 100
+    regionName: 'Rate Config Analysis',
+    xp: 15,
+    maxXp: 15,
+    description: 'Completed rate reconfiguration analysis'
   },
   {
-    title: 'Local Build Issues Resolved',
+    title: 'Halo Build Issues Resolution',
     type: 'Quest',
     members: ['Kieran'],
     region: 'halo',
-    regionName: 'Comcorp Mountains',
-    xp: 100,
-    maxXp: 100
+    regionName: 'Halo',
+    xp: 8,
+    maxXp: 10,
+    description: 'Solved Halo local build issues'
   },
+  
+  // Kasu's Quests
   {
-    title: 'Aspose Template Set (5 done)',
-    type: 'Boss',
-    members: ['Kasu'],
-    region: 'docforge',
-    regionName: 'Docforge Ruins',
-    xp: 90,
-    maxXp: 100
-  },
-  {
-    title: 'HAL Policy Template',
+    title: 'Doc Storage Handover',
     type: 'Quest',
     members: ['Kasu'],
     region: 'docforge',
-    regionName: 'Docforge Ruins',
-    xp: 50,
-    maxXp: 100
+    regionName: 'Document Services',
+    xp: 10,
+    maxXp: 15,
+    description: 'Handed off SFI doc storage refactoring to Keshlin'
   },
   {
-    title: 'HaloV2.100 Logging & ITC Fix',
+    title: 'ITC Credit Report & Letters',
+    type: 'Quest',
+    members: ['Kasu'],
+    region: 'docforge',
+    regionName: 'Document Generation',
+    xp: 20,
+    maxXp: 20,
+    description: 'Delivered ITC Credit Report and other letters'
+  },
+  {
+    title: 'Aspose Template Development',
+    type: 'Quest',
+    members: ['Kasu'],
+    region: 'docforge',
+    regionName: 'Document Services',
+    xp: 15,
+    maxXp: 20,
+    description: 'Form27, HAL Policy, and other templates completed'
+  },
+  
+  // Qiniso's Quests
+  {
+    title: 'HaloV3 ITC Issues & Logging',
     type: 'Boss',
     members: ['Qiniso'],
     region: 'halo',
-    regionName: 'Comcorp Mountains',
-    xp: 100,
-    maxXp: 100
+    regionName: 'Halo Support',
+    xp: 18,
+    maxXp: 20,
+    description: 'Resolved HaloV3 ITC issues + logging fixes'
   },
   {
-    title: 'Client Servicing Test Scenarios',
+    title: 'Client Servicing Scenarios Update',
     type: 'Quest',
     members: ['Qiniso'],
     region: 'clienthold',
-    regionName: 'Clienthold Keep',
-    xp: 70,
-    maxXp: 100
+    regionName: 'Client Servicing',
+    xp: 15,
+    maxXp: 20,
+    description: 'Updated onboarding scenarios; created new test cases'
   },
+  
+  // Dillip's Quest
   {
-    title: 'MP-2208: Scheduled Apex Job',
+    title: 'Scheduled Apex Job Creation',
     type: 'Boss',
     members: ['Dillip'],
     region: 'salesforce',
     regionName: 'SFI',
-    xp: 100,
-    maxXp: 100
+    xp: 20,
+    maxXp: 20,
+    description: 'Built Scheduled + Batchable Apex job for policy transitions'
   },
+  
+  // Eveshan's Quests
   {
-    title: 'CDPE + MO Dev (9 tickets)',
-    type: 'Boss',
+    title: 'CDPE Development Complete',
+    type: 'Quest',
     members: ['Eveshan'],
     region: 'cdpe',
-    regionName: 'CDPE Fields',
-    xp: 90,
-    maxXp: 100
+    regionName: 'CDPE Further Lending',
+    xp: 15,
+    maxXp: 20,
+    description: 'Completed CDPE dev changes; testing in progress'
+  },
+  {
+    title: 'Valuation Rule Tickets',
+    type: 'Quest',
+    members: ['Eveshan'],
+    region: 'cdpe',
+    regionName: 'MO Valuation',
+    xp: 12,
+    maxXp: 18,
+    description: 'Completed 7/9 valuation rule tickets'
+  },
+  {
+    title: 'Edge Step-Up Instalment Changes',
+    type: 'Quest',
+    members: ['Eveshan'],
+    region: 'cdpe',
+    regionName: 'MO Instalments',
+    xp: 15,
+    maxXp: 20,
+    description: 'Changes across onboarding, credit summary, post-credit'
   },
 ];
 
@@ -182,7 +264,7 @@ export const QuestBoard = ({ filter, selectedRegion }: QuestBoardProps) => {
   return (
     <div className="text-center mb-8">
       <h2 className="text-4xl font-bold text-fantasy-gold mb-6 text-glow font-medieval">
-        🧭 Quests & Boss Fights
+        🧭 The Quest Log
       </h2>
       
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -212,6 +294,9 @@ export const QuestBoard = ({ filter, selectedRegion }: QuestBoardProps) => {
             <div className="mb-4 text-left">
               <p className="text-fantasy-silver text-sm mb-2">
                 🧙‍♂️ <span className="font-semibold">Party:</span> {quest.members.join(', ')}
+              </p>
+              <p className="text-fantasy-silver text-xs italic">
+                {quest.description}
               </p>
             </div>
             

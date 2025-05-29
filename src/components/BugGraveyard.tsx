@@ -3,28 +3,28 @@ import { Card } from '@/components/ui/card';
 
 const fallenBugs = [
   {
-    name: 'The Vanishing Premium',
-    age: 19,
-    epitaph: 'Laid to rest after stubborn resistance. Peace at last.',
+    name: 'Role Wraiths of SFI',
+    age: 14,
+    epitaph: 'Permissions ghosts laid to rest (MP-2309, MP-2311, MP-2343, etc.)',
     icon: '👻'
   },
   {
-    name: 'Permissions Phantom',
-    age: 7,
-    epitaph: 'No longer haunts DevPro1, exorcised by Sershin & Keshlin.',
-    icon: '🔒'
+    name: 'Multi-Applicant Miscalculator',
+    age: 8,
+    epitaph: 'Accident-only premiums now correctly exorcised thanks to the test harness.',
+    icon: '🧮'
   },
   {
-    name: 'Multiapp Glitchspawn',
-    age: 12,
-    epitaph: 'Was spotted in the wild — harness detected and reported it.',
-    icon: '⚡'
+    name: 'Doc Storage Doppelganger',
+    age: 21,
+    epitaph: 'Ghosts of conflicting implementation banished (MP-1938).',
+    icon: '📄'
   },
   {
-    name: 'Form Field Fury',
-    age: 5,
-    epitaph: 'Refused to format numbers — finally tamed by Kasu.',
-    icon: '📝'
+    name: 'Build Banshee',
+    age: 6,
+    epitaph: 'Halo build errors silenced at last.',
+    icon: '🔨'
   },
 ];
 
@@ -32,7 +32,7 @@ export const BugGraveyard = () => {
   return (
     <div className="text-center mb-8">
       <h2 className="text-4xl font-bold text-fantasy-gold mb-6 text-glow font-medieval">
-        🪦 Obituary: Farewell to Fallen Bugs
+        🪦 Obituary: Fallen Bugs
       </h2>
       
       <div className="bg-gradient-to-b from-purple-900/20 to-gray-900/40 p-8 rounded-lg border border-fantasy-gold/30 border-glow">

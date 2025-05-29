@@ -7,13 +7,12 @@ interface RegionMapProps {
 }
 
 const regions = [
-  { id: 'halo', name: '🏔️ Comcorp Mountains', system: 'HALO', position: 'top-4 left-1/4' },
-  { id: 'cdpe', name: '🌾 CDPE Fields', system: 'Further Lending', position: 'top-1/4 right-1/4' },
-  { id: 'salesforce', name: '🪄 Salesforce Swamps', system: 'SFI, Automation, Test Harness', position: 'top-1/2 left-8' },
-  { id: 'docforge', name: '🏚️ Docforge Ruins', system: 'Doc Gen, Storage, Aspose Templates', position: 'top-1/2 right-8' },
-  { id: 'knowledge', name: '🧠 Knowledge Crater', system: 'Rate Reconfig, Datastor Categoriser', position: 'bottom-1/4 left-1/3' },
+  { id: 'halo', name: '🏔️ Halo Mountains', system: 'Halo Support, Build Issues', position: 'top-4 left-1/4' },
+  { id: 'cdpe', name: '🌾 CDPE Fields', system: 'Further Lending, MO Valuation', position: 'top-1/4 right-1/4' },
+  { id: 'salesforce', name: '🪄 Salesforce Swamps', system: 'SFI, Test Harness, Automation', position: 'top-1/2 left-8' },
+  { id: 'docforge', name: '🏚️ Document Ruins', system: 'Doc Gen, Storage, Templates', position: 'top-1/2 right-8' },
+  { id: 'knowledge', name: '🧠 Knowledge Crater', system: 'Rate Config, Investigation', position: 'bottom-1/4 left-1/3' },
   { id: 'clienthold', name: '🛡 Clienthold Keep', system: 'Client Servicing', position: 'bottom-1/4 right-1/3' },
-  { id: 'buglands', name: '🐞 Buglands Graveyard', system: 'Obituary Section', position: 'bottom-4 left-1/2 transform -translate-x-1/2' },
 ];
 
 export const RegionMap = ({ onRegionSelect, selectedRegion }: RegionMapProps) => {

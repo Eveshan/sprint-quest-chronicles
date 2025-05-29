@@ -14,7 +14,7 @@ const Index = () => {
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 
   useEffect(() => {
-    document.title = 'Sprint Quest Chronicles - Team Dynamo';
+    document.title = 'The Codebound Chronicles - Team Dynamo';
   }, []);
 
   return (
@@ -32,14 +32,14 @@ const Index = () => {
         {/* Header */}
         <header className="text-center py-8">
           <h1 className="text-6xl font-bold text-fantasy-gold mb-4 animate-glow font-medieval">
-            ⚔️ Sprint Quest Chronicles ⚔️
+            🗺️ The Codebound Chronicles
           </h1>
           <p className="text-2xl text-fantasy-silver mb-2">
-            The Epic Adventures of <span className="text-fantasy-gold font-semibold">Clan Dynamo</span>
+            Sprint XXX — <span className="text-fantasy-gold font-semibold">Clan Dynamo's</span> RPG Sprint Review
           </p>
           <div className="flex items-center justify-center gap-2 text-fantasy-amber">
-            <span className="text-lg">🗓️ Sprint Review</span>
-            <span className="text-lg">⭐ Level Complete</span>
+            <span className="text-lg">📜 The Quest Log Unfolds</span>
+            <span className="text-lg">⚔️ Adventure Complete</span>
           </div>
         </header>
 
